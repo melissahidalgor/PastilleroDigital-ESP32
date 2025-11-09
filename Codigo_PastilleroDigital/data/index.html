@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pastillero</title>
+    <link rel="stylesheet" href="estilos.css"> </head>
+<body>
+    <header>
+        <h1>Mi Pastillero Personal</h1>
+    </header>
+
+    <main>
+        <section id="lista-medicamentos">
+            <h2>Lista de Medicamentos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Dosis</th>
+                        <th>Frecuencia (horas)</th>
+                        <th>Inicio</th>
+                        <th>Duración (días)</th>
+                        <th>Fin</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-medicamentos">
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="agregar-medicamento">
+            <h2>Añadir Nuevo Medicamento</h2>
+            <form id="formulario-medicamento">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="dosis">Dosis:</label>
+                    <input type="text" id="dosis" name="dosis">
+                </div>
+                <div>
+                    <label for="frecuencia">Frecuencia (en horas):</label>
+                    <input type="number" id="frecuencia" name="frecuencia" min="1" required>
+                </div>
+                <div>
+                    <label for="fecha_inicio">Fecha de Inicio:</label>
+                    <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+                </div>
+                <div>
+                    <label for="duracion">Duración (en días):</label>
+                    <input type="number" id="duracion" name="duracion" min="1" required>
+                </div>
+                <div>
+                    <label for="primera_toma">Hora de la Primera Toma:</label>
+                    <input type="time" id="primera_toma" name="primera_toma" required>
+                </div>
+                <button type="submit">Guardar Medicamento</button>
+            </form>
+        </section>
+        
+        <section id="pastillas-tomadas">
+            <h2>Pastillas Tomadas</h2>
+            <ul id="lista-pastillas-tomadas">
+                </ul>
+	    <button id="boton-borrar-historial">Borrar Historial</button>
+        </section>
+
+        <section id="proximas-tomas">
+            <h2>Próximas Tomas</h2>
+            <ul id="lista-proximas-tomas">
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Pastillero</p>
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
