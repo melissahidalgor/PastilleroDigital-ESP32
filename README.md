@@ -28,11 +28,12 @@ El ESP32 aloja un servidor web para la administración remota. Se usan SPIFFS (S
 | **script.js** | JavaScript |Lógica de negocio: Gestión local (localStorage), cálculo de tomas futuras, y comunicación asíncrona (Fetch) con el ESP32. |
 
 ## ⚙️ Características de la Programación 
-° **Detección de toma de pastilla:** Se utiliza un algoritmo de detección de cambio por umbral y un tiempo de confirmación de 5 segundos para validar que una pastilla fue retirada.
+* **Detección de toma de pastilla:** Se utiliza un algoritmo de detección de cambio por umbral y un tiempo de confirmación de 5 segundos para validar que una pastilla fue retirada.
 
-° **Comunicación Cliente-Servidor:**   `handleRecibirProximaToma()`: Recibe los datos de la próxima dosis desde la página web y los almacena en el ESP32.
+* **Comunicación Cliente-Servidor:**   `handleRecibirProximaToma()`: Recibe los datos de la próxima dosis desde la página web y los almacena en el ESP32.
 
   `handleGetTomaNotificacion()`: Permite a la página web hacer polling al ESP32 para saber si se ha detectado una toma física, enviando la confirmación de regreso para actualizar el historial.
 
-° **Gestión de Tiempo:** Se utiliza el protocolo NTP para obtener la hora y fecha actual
-° **Interfaz de Usuario Embebida:** Implementación de la librería LVGL para renderizar la interfaz en el LCD TFT
+* **Gestión de Tiempo:** Se utiliza el protocolo NTP para obtener la hora y fecha actual
+
+* **Interfaz de Usuario Embebida:** Implementación de la librería LVGL para renderizar la interfaz en el LCD TFT
