@@ -10,10 +10,12 @@ El sistema utiliza un microcontrolador ESP32 para controlar los componentes fís
 
 | Componente | Conexión/ Tecnología| Función Principal |
 | :--- | :---: | :--- |
-| **ESP32** | Microcontrolador | Utilizado por su capacidad Wi-Fi  y alto rendimiento |
+| **ESP32 S3** | Microcontrolador | Utilizado por su capacidad Wi-Fi  y alto rendimiento |
 | **Galgas** | Puente de Wheatstone / HX711 (ADC) | Sensores de presión que detectan la presencia o el retiro de pastillas en cada compartimento |
 | **Pantalla LCD TFT** | LVGL (Librería de GUI) / SPI | Visualiza la hora, fecha y la siguiente pastilla a tomar |
 | **Buzzer** | Salida Digital | Activa una alarma sonora cuando llega la hora de la toma |
+| **Batería de Litio (250 mAh)** |  | Autonomía para el uso portable |
+| **TP4056** |  | Módulo de carga y descarga de batería |
 
 ## Desarrollo Web (Web Server)
 
