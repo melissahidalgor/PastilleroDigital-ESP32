@@ -25,7 +25,7 @@ El ESP32 aloja un servidor web para la administración remota. Se usan SPIFFS (S
 | **estilos.css** | CSS3 |Estilos y presentación de la página |
 | **script.js** | JavaScript |Lógica de negocio: Gestión local (localStorage), cálculo de tomas futuras, y comunicación asíncrona (Fetch) con el ESP32. |
 
-## ⚙️ Características de la Programación (Firmware C++)
+## ⚙️ Características de la Programación 
 ° **Detección de toma de pastilla:** Se utiliza un algoritmo de detección de cambio por umbral y un tiempo de confirmación de 5 segundos para validar que una pastilla fue retirada.
 
 ° **Comunicación Cliente-Servidor:**   `handleRecibirProximaToma()`: Recibe los datos de la próxima dosis desde la página web y los almacena en el ESP32.
