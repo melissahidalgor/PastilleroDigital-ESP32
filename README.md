@@ -38,4 +38,6 @@ El ESP32 aloja un servidor web para la administración remota. Se usan SPIFFS (S
 
 * **Interfaz de Usuario Embebida:** Implementación de la librería LVGL para renderizar la interfaz en el LCD TFT
 
+## 🖼️ Montaje
+
 ![texto alternativo](Documentacion/Pastillero.png)
