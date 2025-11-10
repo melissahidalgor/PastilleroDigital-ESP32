@@ -37,3 +37,5 @@ El ESP32 aloja un servidor web para la administración remota. Se usan SPIFFS (S
 * **Gestión de Tiempo:** Se utiliza el protocolo NTP para obtener la hora y fecha actual
 
 * **Interfaz de Usuario Embebida:** Implementación de la librería LVGL para renderizar la interfaz en el LCD TFT
+
+![texto alternativo](Documentacion/Pastillero.png)
